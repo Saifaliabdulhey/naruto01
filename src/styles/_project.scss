@@ -1,0 +1,51 @@
+.all_logo_img {
+    width: 12rem;
+    margin-right: 0;
+}
+
+.all-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+._all {
+    margin: 0;
+}
+
+.all_links {
+}
+
+.active1 {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 15px;
+    font-weight: 600;
+    font-size: large;
+    background: #ff00cc; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #333399, #ff00cc); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #333399,
+        #ff00cc
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border-radius: 20px;
+    padding: 5px 20px;
+    transition: all 0.3s;
+}
+
+.link1 {
+    color: black;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: 600;
+    font-size: large;
+    padding: 5px 20px;
+    border-radius: 20px;
+    transition: all 0.3s;
+    &:hover {
+        opacity: 0.7;
+    }
+}

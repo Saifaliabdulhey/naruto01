@@ -1,0 +1,117 @@
+.item {
+    position: relative;
+    width: 380px;
+    height: 300px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    padding: 10px;
+    transition: all 0.3s;
+    margin: 30px 10px;
+    background: rgba(86, 31, 251, 0.295);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 5px 5px rgba(86, 31, 251, 0.295);
+    &:hover {
+        box-shadow: 0 0 5px 5px rgba(86, 31, 251, 0.295);
+        cursor: pointer;
+        background: rgba(86, 31, 251, 0.295);
+    }
+    .item-img{
+        width: 150px;
+        margin-bottom:-10px;
+        transition: all 0.3s;
+        position: absolute;
+        top: -10px;
+        transition: all 0.4s;
+    }
+
+    p {
+        width:20rem;
+    }
+}
+
+.youtube-icon {
+    width: 40px;
+    position: absolute;
+    transform:translateX(-5rem);
+    bottom:0;
+    top:10px;
+    opacity: 0;
+    transition: all 0.4s;
+}
+.youtube-icon:hover {
+    filter: invert(20%);
+}
+.item:hover .youtube-icon {
+    transform:translateX(-10rem);;
+    opacity: 1;
+}
+
+.logo-pic {
+    width: 20rem;
+    transform: rotate(-30deg);
+    // filter: invert(50%);
+    opacity: 0.1;
+}
+
+.item:hover .logo-pic {
+    filter: blur(5px);
+}
+
+.item-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom:0;
+    text-transform: uppercase;
+    transition: all 0.4s ;
+}
+
+.item-content {
+    color: rgba(0, 0, 0, 0.616);
+    line-height: 22px;
+} 
+
+.learn-more {
+    margin-top: -10px;
+}
+
+.item:hover .item-img {
+    transform: scale(1.5);
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    padding-bottom:0px;
+}
+.item:hover .item-title {
+    opacity: 0;
+}
+
+.description {
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    line-height:25px;
+    font-weight: 600;
+    color: rgba(53, 6, 184, 0.658);
+    font-size: 17px;
+
+    @media (max-width: 920px) {
+        width: 350px;
+        margin-top:50px;
+    }
+}
+
+.coding {
+    width: 8rem;
+    filter: invert(60%);
+    margin-top:20px;
+}
+
+.product-details {
+    position:absolute;
+    bottom:20px;
+}

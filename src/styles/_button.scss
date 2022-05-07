@@ -1,0 +1,64 @@
+
+
+.button {
+    background: #a605fd;
+    color: rgb(255, 255, 255);
+    padding: 10px 50px;
+    border: none;
+    border-radius: 20px;
+    transition: all 0.3s;
+    &:hover {
+        cursor: pointer;
+        background: $sub-color;
+        padding: 10px 70px;
+    }
+}
+
+
+.btn-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background:$main-color;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.3s;
+    &:hover {
+        background: $sub-color;
+        cursor: pointer;
+        outline: none;
+    }
+
+}
+
+// modal button
+
+.btn {
+    background: #a605fd;
+    color: rgb(255, 255, 255);
+    padding: 10px 50px;
+    border: none;
+    border-radius: 20px;
+    transition: all 0.3s;
+    margin: 5px;
+    transition: all 0.3s;
+    &:hover {
+        background:$sub-color;
+        cursor: pointer;
+    }
+}
+
+.btn-2 {
+    background: $sub-color;
+    color: rgb(255, 255, 255);
+    padding: 10px 50px;
+    border: none;
+    border-radius: 20px;
+    transition: all 0.3s;
+    &:hover {
+        background:$main-color;
+        cursor: pointer;
+    }
+}

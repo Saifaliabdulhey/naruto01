@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "./styles/settings";
+@import "./styles/header";
+@import "./styles/chest";
+@import "./styles/button";
+@import "./styles/body";
+@import "./styles/skills";
+@import "./styles/footer";
+@import "./styles/project";
+@import "./styles/contact";
+@import "./styles/collections";
+@import "./styles/modal";

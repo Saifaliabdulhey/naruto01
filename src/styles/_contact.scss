@@ -1,0 +1,48 @@
+.contact-img {
+    width: 300px;
+    margin-right:5rem;
+}
+
+.body-content {
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    margin-top:10rem ;
+    margin-bottom:10rem ;
+}
+.body-img {
+    // margin-bottom:10rem;
+
+    img {
+        width: 400px;
+    }
+}
+
+.contact-list {
+    h1 {
+        opacity: 0.7;
+    }
+    p {
+        width: 500px;
+        text-align: center;
+        span {
+            img {
+                width: 50px
+            }
+        }
+    }
+}
+
+.mail-list {
+    font-family: 'PT Sans', sans-serif;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .mail-info {
+        img {
+            width: 70px;
+        }
+    }
+}

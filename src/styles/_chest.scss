@@ -1,0 +1,116 @@
+.headering {
+    background-image: linear-gradient(rgb(17, 0, 255), rgb(255, 255, 255));
+     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+    height: 62rem;
+    margin-top: 0;
+    justify-content: space-between;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.saif-img {
+    width: 15rem;
+    border-radius: 50%;
+    margin: 5rem;
+    transform: scale(1.2);
+    outline: none;
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.178);
+    transition: all 0.3s;
+    &:hover {
+        box-shadow: 0 0 1px 10px rgba(107, 108, 110, 0.356);
+        transform: scale(1.3);
+    }
+    @media (max-width: 920px) {
+        border: 10px solid white;
+        margin-top: 0;
+        width: 12rem;
+    }
+}
+
+.nested-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80rem;
+    margin: auto;
+    width: 100%;
+    @media (max-width: 920px) {
+        display: block;
+    }
+}
+
+.img-content {
+    position: relative;
+}
+
+.navigator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .img1 {
+        width: 130px;
+        background: $main-color;
+        margin: 10px;
+        border-radius: 50%;
+    }
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem 0;
+}
+
+.main_content_img {
+    img {
+        width: 35rem;
+        -webkit-animation: spin 4s linear infinite;
+        -moz-animation: spin 4s linear infinite;
+        animation: spin 4s linear infinite;
+    }
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.naruto_title {
+    position: relative;
+    h1 {
+        font-size: 8rem;
+        color: rgba(81, 13, 218, 0.87);
+    }
+
+    p {
+        font-size: 6rem;
+        position: absolute;
+        top: 15px;
+        left: 80px;
+        color: rgba(70, 6, 199, 0.876);
+    }
+}
+
+.naruto_content {
+    h1 {
+        width: 40rem;
+    }
+}

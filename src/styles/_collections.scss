@@ -1,0 +1,153 @@
+.collections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.collection_item {
+    // position: relative;
+    // box-shadow: 0 0 1px 2px rgba(70, 6, 199, 0.876);
+    border-radius: 10px;
+    width: 350px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0);
+    margin: 20px;
+    color: rgba(0, 0, 0, 0.813);
+    font-weight: bolder;
+    transition: all 0.3s;
+    background: rgba(86, 31, 251, 0.295);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 5px 5px rgba(86, 31, 251, 0.295);
+    img {
+        width: 300px;
+        margin-top: 0px;
+    }
+
+    li {
+        text-align: start;
+        margin: 6px 20px;
+    }
+}
+
+.collection_item:hover {
+    height: 500px;
+}
+
+.whole-content {
+    margin-bottom: 100px;
+    p {
+        color: rgba(255, 0, 0, 0.589);
+    }
+}
+
+.specifications {
+    transform: translateY(0px);
+    opacity: 1;
+    display: block;
+}
+
+.collection_item:hover .collect-img {
+    width: 300px;
+    margin-top: 0px;
+}
+// .collection_item:hover .specifications {
+//     transform: translateY(0px);
+//     opacity: 1;
+//     display: block;
+// }
+
+.collect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h4 {
+        margin: 100px 20px;
+        background: rgb(99, 8, 255);
+        color: rgb(255, 255, 255);
+        padding: 10px 50px;
+        border: none;
+        border-radius: 20px;
+        transition: all 0.3s;
+        &:hover {
+            background: rgba(99, 8, 255, 0.791);
+            cursor: pointer;
+        }
+    }
+}
+
+.focused_collection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 7rem;
+    margin-bottom: 20px;
+    position: relative;
+
+    p {
+        color: rgb(0, 0, 0);
+        padding: 0 20px;
+        border-radius: 20px;
+        font-weight: 700;
+        font-size: 1.3rem;
+    }
+
+    span {
+        width: 140px;
+        height: 4px;
+        background: rgba(99, 8, 255, 0.791);
+        border-radius: 50%;
+        position: absolute;
+        top: 3.5rem;
+    }
+}
+
+
+//Modal design
+.modal {
+    background: rgba(4, 6, 37, 0.527);
+    height: 55rem;
+    width: 70rem;
+    margin: auto;
+    backdrop-filter: blur(40px);
+    border-radius: 2%;
+    outline: none;
+    box-shadow: 0 0 5px 5px $main-color;
+
+    @media (max-width: 920px) {
+
+        width: 40rem;
+        height: 60rem;
+        overflow: visible;
+        z-index: 1000;
+        overflow-y: auto;
+        box-shadow: none;
+    }
+
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+    align-items: center;
+    justify-content:center;
+    display:flex;
+    transition: opacity 200ms ease-in-out;
+}
+
+.modal_container {
+    position: relative;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
+.my-backdrop-style {
+    color: red;
+}

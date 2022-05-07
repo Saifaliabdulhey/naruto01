@@ -1,0 +1,30 @@
+.body-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.computer-img {
+    img {
+        width: 600px;
+        transform: scale(1);
+        transition: all 0.3s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.go-back {
+    background: none;
+    width: 13px;
+    margin: 10px;
+    padding: 10px;
+    filter: invert(40%);
+    transition: all 0.3s;
+    &:hover {
+        background: rgba(0, 0, 0, 0.124);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
